@@ -1,0 +1,16 @@
+{
+  "params":
+  {
+      "local_server":"True",
+      "local_uri":"mysql://root:@localhost/shobhit",
+      "prod_uri":"mysql://root:@localhost/shobhit",
+      "gmailuser" : "techstarTECHtechstar@gmail.com",
+      "gmailpassword" : "alpha@beta$2"
+  }
+
+
+
+
+
+
+}
