@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index page</title>
+    
+    <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'validation.js') }}" ></script>
+
+    <link href="{{ url_for('static', filename = 'ext.css') }}" rel="stylesheet" type="text/css">
+         
+</head>
+<body>
+    
+    <form action ="{{ url_for('logi') }}" target="_blank" name="login_form" method = "POST" >
+        <p>Enter Full Name:</p>
+        <p><input type = "text" name = "name" id="fname" onchange="capital()" /></p>
+
+        <p>Age:</p>
+
+        <input type = "number" name = "age" onchange="check_age()" id="fage"/>
+
+        <p>Location:</p>
+        <input type="text" name="location" onchange="capital()" />
+
+
+        <p>covidStatus:</p>
+
+        <p><input type = "text" name = "status" /></p>
+
+        <button type="=submit" onclick="onlick()">Submit</button>
+
+     </form>
+     
+
+</body>
+</html>
